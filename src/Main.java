@@ -19,6 +19,7 @@ public class Main {
         System.out.println(Arrays.toString(arraysSort(firstArrSort, secondArrSort)));
 
         //TASK 5
+        foundLitter(scanner);
         System.out.println(foundLitter(scanner));
 
         //TASK 6
@@ -29,7 +30,14 @@ public class Main {
 
     //TASK 1
     public static void smallBig(String letter) {
-        for (char i = 'a'; i <= 'z'; i++) {
+        char myChar = letter.charAt(0);
+        if(myChar >= 'a' && myChar<='z'){
+            System.out.println("small");
+        }
+        if(myChar >= 'A' && myChar<='Z'){
+            System.out.println("Big");
+        }
+      /*  for (char i = 'a'; i <= 'z'; i++) {
             if (Objects.equals(letter, Character.toString(i))) {
                 System.out.println("small");
                 return;
@@ -40,8 +48,7 @@ public class Main {
                 System.out.println("Big");
                 return;
             }
-        }
-
+        }*/
     }
 
     //TASK 2
